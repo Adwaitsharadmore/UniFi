@@ -1,0 +1,134 @@
+[
+  {
+    "id": "goal_1",
+    "userId": "user_1",
+    "name": "Home Down Payment",
+    "category": "Home",
+    "targetAmountCents": 10000000,
+    "currentAmountCents": 3500000,
+    "targetDate": "2025-12-31",
+    "successProbability": 85,
+    "isPublic": true
+  },
+  {
+    "id": "goal_2",
+    "userId": "user_2",
+    "name": "Credit Card Debt Payoff",
+    "category": "Debt",
+    "targetAmountCents": 1500000,
+    "currentAmountCents": 1200000,
+    "targetDate": "2024-06-30",
+    "successProbability": 95,
+    "isPublic": true
+  },
+  {
+    "id": "goal_3",
+    "userId": "user_3",
+    "name": "Europe Backpacking Trip",
+    "category": "Travel",
+    "targetAmountCents": 500000,
+    "currentAmountCents": 320000,
+    "targetDate": "2024-08-15",
+    "successProbability": 90,
+    "isPublic": true
+  },
+  {
+    "id": "goal_4",
+    "userId": "user_4",
+    "name": "Kids College Fund",
+    "category": "Tuition",
+    "targetAmountCents": 5000000,
+    "currentAmountCents": 1800000,
+    "targetDate": "2035-09-01",
+    "successProbability": 78,
+    "isPublic": true
+  },
+  {
+    "id": "goal_5",
+    "userId": "user_5",
+    "name": "Emergency Fund",
+    "category": "Emergency",
+    "targetAmountCents": 1200000,
+    "currentAmountCents": 1200000,
+    "targetDate": "2024-03-31",
+    "successProbability": 100,
+    "isPublic": true
+  },
+  {
+    "id": "goal_6",
+    "userId": "user_6",
+    "name": "Tesla Model 3",
+    "category": "Car",
+    "targetAmountCents": 4500000,
+    "currentAmountCents": 1800000,
+    "targetDate": "2025-03-31",
+    "successProbability": 70,
+    "isPublic": true
+  },
+  {
+    "id": "goal_7",
+    "userId": "user_7",
+    "name": "Retirement Nest Egg",
+    "category": "Retirement",
+    "targetAmountCents": 20000000,
+    "currentAmountCents": 8500000,
+    "targetDate": "2045-12-31",
+    "successProbability": 82,
+    "isPublic": true
+  },
+  {
+    "id": "goal_8",
+    "userId": "user_8",
+    "name": "Startup Capital",
+    "category": "Business",
+    "targetAmountCents": 2500000,
+    "currentAmountCents": 900000,
+    "targetDate": "2024-09-30",
+    "successProbability": 65,
+    "isPublic": true
+  },
+  {
+    "id": "goal_9",
+    "userId": "user_9",
+    "name": "MBA Tuition",
+    "category": "Tuition",
+    "targetAmountCents": 8000000,
+    "currentAmountCents": 2400000,
+    "targetDate": "2026-08-31",
+    "successProbability": 88,
+    "isPublic": true
+  },
+  {
+    "id": "goal_10",
+    "userId": "user_10",
+    "name": "Financial Independence",
+    "category": "Retirement",
+    "targetAmountCents": 50000000,
+    "currentAmountCents": 12500000,
+    "targetDate": "2030-12-31",
+    "successProbability": 75,
+    "isPublic": true
+  },
+  {
+    "id": "goal_11",
+    "userId": "user_1",
+    "name": "Emergency Fund",
+    "category": "Emergency",
+    "targetAmountCents": 600000,
+    "currentAmountCents": 450000,
+    "targetDate": "2024-05-31",
+    "successProbability": 92,
+    "isPublic": true
+  },
+  {
+    "id": "goal_12",
+    "userId": "user_3",
+    "name": "New Laptop",
+    "category": "Other",
+    "targetAmountCents": 200000,
+    "currentAmountCents": 150000,
+    "targetDate": "2024-04-30",
+    "successProbability": 95,
+    "isPublic": true
+  }
+]

@@ -1,0 +1,195 @@
+{
+  "units": [
+    {
+      "id": "unit_1_foundations",
+      "title": "Foundations",
+      "order": 1,
+      "checkpointId": "checkpoint_1",
+      "skills": [
+        {
+          "id": "budgeting_basics",
+          "title": "Budgeting Basics",
+          "icon": "💰",
+          "color": "blue",
+          "order": 1,
+          "tipId": "tip_budgeting_basics",
+          "lessons": [
+            { "id": "lesson_budget_1" },
+            { "id": "lesson_budget_2" },
+            { "id": "lesson_budget_3" }
+          ]
+        },
+        {
+          "id": "income_vs_expense",
+          "title": "Income vs Expense",
+          "icon": "📊",
+          "color": "green",
+          "order": 2,
+          "prerequisiteSkillIds": ["budgeting_basics"],
+          "tipId": "tip_income_expense",
+          "lessons": [
+            { "id": "lesson_income_1" },
+            { "id": "lesson_income_2" }
+          ]
+        },
+        {
+          "id": "emergency_fund",
+          "title": "Emergency Fund",
+          "icon": "🛡️",
+          "color": "purple",
+          "order": 3,
+          "prerequisiteSkillIds": ["income_vs_expense"],
+          "tipId": "tip_emergency_fund",
+          "lessons": [
+            { "id": "lesson_emergency_1" },
+            { "id": "lesson_emergency_2" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_2_goal_planning",
+      "title": "Goal Planning",
+      "order": 2,
+      "checkpointId": "checkpoint_2",
+      "skills": [
+        {
+          "id": "long_term_goals",
+          "title": "Long-Term Goals",
+          "icon": "🎯",
+          "color": "orange",
+          "order": 1,
+          "prerequisiteSkillIds": ["emergency_fund"],
+          "tipId": "tip_long_term_goals",
+          "lessons": [
+            { "id": "lesson_goals_1" },
+            { "id": "lesson_goals_2" }
+          ]
+        },
+        {
+          "id": "envelopes_50_30_20",
+          "title": "Envelopes & 50/30/20",
+          "icon": "📁",
+          "color": "teal",
+          "order": 2,
+          "prerequisiteSkillIds": ["long_term_goals"],
+          "tipId": "tip_envelopes",
+          "lessons": [
+            { "id": "lesson_envelopes_1" },
+            { "id": "lesson_envelopes_2" },
+            { "id": "lesson_envelopes_3" }
+          ]
+        },
+        {
+          "id": "debt_vs_save",
+          "title": "Debt vs Save Trade-offs",
+          "icon": "⚖️",
+          "color": "red",
+          "order": 3,
+          "prerequisiteSkillIds": ["envelopes_50_30_20"],
+          "tipId": "tip_debt_save",
+          "lessons": [
+            { "id": "lesson_debt_1" },
+            { "id": "lesson_debt_2" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_3_credit_loans",
+      "title": "Credit & Loans",
+      "order": 3,
+      "checkpointId": "checkpoint_3",
+      "skills": [
+        {
+          "id": "credit_basics",
+          "title": "Credit Basics",
+          "icon": "💳",
+          "color": "indigo",
+          "order": 1,
+          "prerequisiteSkillIds": ["debt_vs_save"],
+          "tipId": "tip_credit_basics",
+          "lessons": [
+            { "id": "lesson_credit_1" },
+            { "id": "lesson_credit_2" },
+            { "id": "lesson_credit_3" }
+          ]
+        },
+        {
+          "id": "credit_score",
+          "title": "Credit Score",
+          "icon": "📈",
+          "color": "pink",
+          "order": 2,
+          "prerequisiteSkillIds": ["credit_basics"],
+          "tipId": "tip_credit_score",
+          "lessons": [
+            { "id": "lesson_score_1" },
+            { "id": "lesson_score_2" }
+          ]
+        },
+        {
+          "id": "loan_types",
+          "title": "Loan Types",
+          "icon": "🏦",
+          "color": "yellow",
+          "order": 3,
+          "prerequisiteSkillIds": ["credit_score"],
+          "tipId": "tip_loan_types",
+          "lessons": [
+            { "id": "lesson_loans_1" },
+            { "id": "lesson_loans_2" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit_4_investing",
+      "title": "Investing Basics",
+      "order": 4,
+      "checkpointId": "checkpoint_4",
+      "skills": [
+        {
+          "id": "investment_basics",
+          "title": "Investment Basics",
+          "icon": "📈",
+          "color": "emerald",
+          "order": 1,
+          "prerequisiteSkillIds": ["loan_types"],
+          "tipId": "tip_investment_basics",
+          "lessons": [
+            { "id": "lesson_invest_1" },
+            { "id": "lesson_invest_2" },
+            { "id": "lesson_invest_3" }
+          ]
+        },
+        {
+          "id": "risk_return",
+          "title": "Risk vs Return",
+          "icon": "⚡",
+          "color": "amber",
+          "order": 2,
+          "prerequisiteSkillIds": ["investment_basics"],
+          "tipId": "tip_risk_return",
+          "lessons": [
+            { "id": "lesson_risk_1" },
+            { "id": "lesson_risk_2" }
+          ]
+        },
+        {
+          "id": "retirement_planning",
+          "title": "Retirement Planning",
+          "icon": "🏖️",
+          "color": "cyan",
+          "order": 3,
+          "prerequisiteSkillIds": ["risk_return"],
+          "tipId": "tip_retirement",
+          "lessons": [
+            { "id": "lesson_retirement_1" },
+            { "id": "lesson_retirement_2" }
+          ]
+        }
+      ]
+    }
+  ]
+}

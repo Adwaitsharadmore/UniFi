@@ -1,0 +1,150 @@
+{
+  "currentWeek": "2024-01-15",
+  "leaderboards": [
+    {
+      "week": "2024-01-15",
+      "entries": [
+        {
+          "id": "user_1",
+          "name": "Alex Chen",
+          "avatar": "/avatars/user_joyboy.png",
+          "xp": 2450,
+          "streak": 12,
+          "rank": 1,
+          "region": "North America"
+        },
+        {
+          "id": "user_2",
+          "name": "Sarah Johnson",
+          "avatar": "/avatars/user_mati.png",
+          "xp": 2380,
+          "streak": 15,
+          "rank": 2,
+          "region": "North America"
+        },
+        {
+          "id": "user_3",
+          "name": "Mike Rodriguez",
+          "avatar": "/avatars/user_pek.png",
+          "xp": 2290,
+          "streak": 8,
+          "rank": 3,
+          "region": "North America"
+        },
+        {
+          "id": "user_4",
+          "name": "Emma Wilson",
+          "avatar": "/avatars/user_krimson.png",
+          "xp": 2150,
+          "streak": 20,
+          "rank": 4,
+          "region": "Europe"
+        },
+        {
+          "id": "user_5",
+          "name": "David Kim",
+          "avatar": "/placeholder-user.jpg",
+          "xp": 2080,
+          "streak": 6,
+          "rank": 5,
+          "region": "Asia"
+        },
+        {
+          "id": "user_6",
+          "name": "Lisa Thompson",
+          "avatar": "/placeholder-user.jpg",
+          "xp": 1950,
+          "streak": 14,
+          "rank": 6,
+          "region": "North America"
+        },
+        {
+          "id": "user_7",
+          "name": "James Brown",
+          "avatar": "/placeholder-user.jpg",
+          "xp": 1820,
+          "streak": 9,
+          "rank": 7,
+          "region": "Europe"
+        },
+        {
+          "id": "user_8",
+          "name": "Maria Garcia",
+          "avatar": "/placeholder-user.jpg",
+          "xp": 1750,
+          "streak": 11,
+          "rank": 8,
+          "region": "South America"
+        },
+        {
+          "id": "user_9",
+          "name": "Tom Anderson",
+          "avatar": "/placeholder-user.jpg",
+          "xp": 1680,
+          "streak": 7,
+          "rank": 9,
+          "region": "North America"
+        },
+        {
+          "id": "user_10",
+          "name": "Anna Lee",
+          "avatar": "/placeholder-user.jpg",
+          "xp": 1620,
+          "streak": 13,
+          "rank": 10,
+          "region": "Asia"
+        }
+      ]
+    },
+    {
+      "week": "2024-01-08",
+      "entries": [
+        {
+          "id": "user_2",
+          "name": "Sarah Johnson",
+          "avatar": "/avatars/user_mati.png",
+          "xp": 2890,
+          "streak": 22,
+          "rank": 1,
+          "region": "North America"
+        },
+        {
+          "id": "user_1",
+          "name": "Alex Chen",
+          "avatar": "/avatars/user_joyboy.png",
+          "xp": 2750,
+          "streak": 19,
+          "rank": 2,
+          "region": "North America"
+        },
+        {
+          "id": "user_4",
+          "name": "Emma Wilson",
+          "avatar": "/avatars/user_krimson.png",
+          "xp": 2630,
+          "streak": 27,
+          "rank": 3,
+          "region": "Europe"
+        },
+        {
+          "id": "user_3",
+          "name": "Mike Rodriguez",
+          "avatar": "/avatars/user_pek.png",
+          "xp": 2480,
+          "streak": 15,
+          "rank": 4,
+          "region": "North America"
+        },
+        {
+          "id": "user_6",
+          "name": "Lisa Thompson",
+          "avatar": "/placeholder-user.jpg",
+          "xp": 2320,
+          "streak": 21,
+          "rank": 5,
+          "region": "North America"
+        }
+      ]
+    }
+  ]
+}

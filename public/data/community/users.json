@@ -1,0 +1,222 @@
+[
+  {
+    "id": "user_1",
+    "username": "sarah_saves",
+    "fullName": "Sarah Chen",
+    "avatarUrl": "/avatars/user_joyboy.png",
+    "location": {
+      "city": "San Francisco",
+      "region": "California",
+      "country": "USA"
+    },
+    "headline": "Saving for my first home 🏠",
+    "badges": [
+      { "id": "badge_1", "name": "Budget Master", "icon": "🎯" },
+      { "id": "badge_2", "name": "Streak Keeper", "icon": "🔥" }
+    ],
+    "xp": 2450,
+    "streakDays": 47,
+    "titles": ["Budget Knight", "Savings Warrior"],
+    "isFollowing": false,
+    "isConnected": false,
+    "mutualConnections": 3
+  },
+  {
+    "id": "user_2",
+    "username": "debt_free_mike",
+    "fullName": "Mike Rodriguez",
+    "avatarUrl": "/avatars/user_mati.png",
+    "location": {
+      "city": "Austin",
+      "region": "Texas",
+      "country": "USA"
+    },
+    "headline": "Debt-free in 6 months! 💪",
+    "badges": [
+      { "id": "badge_3", "name": "Debt Destroyer", "icon": "⚡" },
+      { "id": "badge_4", "name": "Goal Crusher", "icon": "🏆" }
+    ],
+    "xp": 3200,
+    "streakDays": 89,
+    "titles": ["Debt Slayer", "Financial Freedom Fighter"],
+    "isFollowing": true,
+    "isConnected": false,
+    "mutualConnections": 7
+  },
+  {
+    "id": "user_3",
+    "username": "travel_fund_emma",
+    "fullName": "Emma Thompson",
+    "avatarUrl": "/avatars/user_pek.png",
+    "location": {
+      "city": "Seattle",
+      "region": "Washington",
+      "country": "USA"
+    },
+    "headline": "Exploring the world, one dollar at a time ✈️",
+    "badges": [
+      { "id": "badge_5", "name": "Travel Enthusiast", "icon": "🌍" },
+      { "id": "badge_6", "name": "Smart Saver", "icon": "💡" }
+    ],
+    "xp": 1890,
+    "streakDays": 23,
+    "titles": ["Wanderlust Warrior"],
+    "isFollowing": false,
+    "isConnected": true,
+    "mutualConnections": 2
+  },
+  {
+    "id": "user_4",
+    "username": "college_fund_dad",
+    "fullName": "David Kim",
+    "avatarUrl": "/avatars/user_krimson.png",
+    "location": {
+      "city": "Boston",
+      "region": "Massachusetts",
+      "country": "USA"
+    },
+    "headline": "Building my kids' future, one investment at a time 👨‍👧‍👦",
+    "badges": [
+      { "id": "badge_7", "name": "Family First", "icon": "👨‍👧‍👦" },
+      { "id": "badge_8", "name": "Long-term Thinker", "icon": "📈" }
+    ],
+    "xp": 4100,
+    "streakDays": 156,
+    "titles": ["Family Protector", "Future Builder"],
+    "isFollowing": true,
+    "isConnected": true,
+    "mutualConnections": 12
+  },
+  {
+    "id": "user_5",
+    "username": "emergency_ready",
+    "fullName": "Lisa Park",
+    "avatarUrl": "/avatars/user_joyboy.png",
+    "location": {
+      "city": "Denver",
+      "region": "Colorado",
+      "country": "USA"
+    },
+    "headline": "Emergency fund: 6 months strong! 🛡️",
+    "badges": [
+      { "id": "badge_9", "name": "Emergency Expert", "icon": "🛡️" },
+      { "id": "badge_10", "name": "Consistency Champion", "icon": "🎯" }
+    ],
+    "xp": 2750,
+    "streakDays": 78,
+    "titles": ["Safety First", "Preparedness Pro"],
+    "isFollowing": false,
+    "isConnected": false,
+    "mutualConnections": 5
+  },
+  {
+    "id": "user_6",
+    "username": "car_buyer_alex",
+    "fullName": "Alex Johnson",
+    "avatarUrl": "/avatars/user_mati.png",
+    "location": {
+      "city": "Miami",
+      "region": "Florida",
+      "country": "USA"
+    },
+    "headline": "My dream car is getting closer! 🚗",
+    "badges": [
+      { "id": "badge_11", "name": "Car Enthusiast", "icon": "🚗" },
+      { "id": "badge_12", "name": "Goal Setter", "icon": "🎯" }
+    ],
+    "xp": 1650,
+    "streakDays": 34,
+    "titles": ["Dream Chaser"],
+    "isFollowing": false,
+    "isConnected": false,
+    "mutualConnections": 1
+  },
+  {
+    "id": "user_7",
+    "username": "retirement_planner",
+    "fullName": "Jennifer Walsh",
+    "avatarUrl": "/avatars/user_pek.png",
+    "location": {
+      "city": "Portland",
+      "region": "Oregon",
+      "country": "USA"
+    },
+    "headline": "Planning for the golden years 🌅",
+    "badges": [
+      { "id": "badge_13", "name": "Retirement Ready", "icon": "🌅" },
+      { "id": "badge_14", "name": "Investment Guru", "icon": "📊" }
+    ],
+    "xp": 5200,
+    "streakDays": 203,
+    "titles": ["Future Visionary", "Investment Master"],
+    "isFollowing": true,
+    "isConnected": false,
+    "mutualConnections": 8
+  },
+  {
+    "id": "user_8",
+    "username": "business_starter",
+    "fullName": "Marcus Williams",
+    "avatarUrl": "/avatars/user_krimson.png",
+    "location": {
+      "city": "Chicago",
+      "region": "Illinois",
+      "country": "USA"
+    },
+    "headline": "Building my business empire 💼",
+    "badges": [
+      { "id": "badge_15", "name": "Entrepreneur", "icon": "💼" },
+      { "id": "badge_16", "name": "Risk Taker", "icon": "🎲" }
+    ],
+    "xp": 3800,
+    "streakDays": 67,
+    "titles": ["Business Builder", "Innovation Leader"],
+    "isFollowing": false,
+    "isConnected": true,
+    "mutualConnections": 4
+  },
+  {
+    "id": "user_9",
+    "username": "tuition_saver",
+    "fullName": "Rachel Green",
+    "avatarUrl": "/avatars/user_joyboy.png",
+    "location": {
+      "city": "New York",
+      "region": "New York",
+      "country": "USA"
+    },
+    "headline": "Education is the best investment 📚",
+    "badges": [
+      { "id": "badge_17", "name": "Student Success", "icon": "📚" },
+      { "id": "badge_18", "name": "Scholarship Hunter", "icon": "🎓" }
+    ],
+    "xp": 2100,
+    "streakDays": 45,
+    "titles": ["Knowledge Seeker"],
+    "isFollowing": false,
+    "isConnected": false,
+    "mutualConnections": 6
+  },
+  {
+    "id": "user_10",
+    "username": "financial_freedom",
+    "fullName": "James Wilson",
+    "avatarUrl": "/avatars/user_mati.png",
+    "location": {
+      "city": "Phoenix",
+      "region": "Arizona",
+      "country": "USA"
+    },
+    "headline": "On the path to financial independence 🚀",
+    "badges": [
+      { "id": "badge_19", "name": "FIRE Follower", "icon": "🔥" },
+      { "id": "badge_20", "name": "Wealth Builder", "icon": "💰" }
+    ],
+    "xp": 4800,
+    "streakDays": 134,
+    "titles": ["Financial Freedom Fighter", "Wealth Warrior"],
+    "isFollowing": true,
+    "isConnected": true,
+    "mutualConnections": 15
+  }
+]

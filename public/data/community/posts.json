@@ -1,0 +1,194 @@
+[
+  {
+    "id": "post_1",
+    "userId": "user_1",
+    "goalId": "goal_1",
+    "createdAt": "2024-01-15T10:30:00Z",
+    "type": "milestone",
+    "content": "Just hit 35% of my home down payment goal! 🏠✨ Every dollar saved gets me closer to owning my first home. The journey is tough but so worth it!",
+    "mediaUrl": null,
+    "metrics": {
+      "likes": 24,
+      "comments": 8,
+      "reposts": 3
+    },
+    "likedByMe": false,
+    "repostedByMe": false
+  },
+  {
+    "id": "post_2",
+    "userId": "user_2",
+    "goalId": "goal_2",
+    "createdAt": "2024-01-14T16:45:00Z",
+    "type": "celebration",
+    "content": "DEBT-FREE MILESTONE! 🎉 Paid off another $500 this week. Only $3,000 left to go! The light at the end of the tunnel is getting brighter!",
+    "mediaUrl": null,
+    "metrics": {
+      "likes": 42,
+      "comments": 15,
+      "reposts": 12
+    },
+    "likedByMe": true,
+    "repostedByMe": false
+  },
+  {
+    "id": "post_3",
+    "userId": "user_5",
+    "goalId": "goal_5",
+    "createdAt": "2024-01-14T09:15:00Z",
+    "type": "milestone",
+    "content": "Emergency fund is officially complete! 🛡️ 6 months of expenses saved. Feeling so much more secure about the future.",
+    "mediaUrl": null,
+    "metrics": {
+      "likes": 38,
+      "comments": 12,
+      "reposts": 7
+    },
+    "likedByMe": false,
+    "repostedByMe": false
+  },
+  {
+    "id": "post_4",
+    "userId": "user_3",
+    "goalId": "goal_3",
+    "createdAt": "2024-01-13T14:20:00Z",
+    "type": "tip",
+    "content": "Pro tip: I've been using the 50/30/20 rule and it's been a game changer! 50% needs, 30% wants, 20% savings. My travel fund is growing faster than ever! ✈️",
+    "mediaUrl": null,
+    "metrics": {
+      "likes": 31,
+      "comments": 9,
+      "reposts": 5
+    },
+    "likedByMe": false,
+    "repostedByMe": true
+  },
+  {
+    "id": "post_5",
+    "userId": "user_7",
+    "goalId": "goal_7",
+    "createdAt": "2024-01-13T11:30:00Z",
+    "type": "update",
+    "content": "Retirement planning update: Increased my 401k contribution to 15% this month. Compound interest is truly magical! 📈",
+    "mediaUrl": null,
+    "metrics": {
+      "likes": 19,
+      "comments": 6,
+      "reposts": 2
+    },
+    "likedByMe": true,
+    "repostedByMe": false
+  },
+  {
+    "id": "post_6",
+    "userId": "user_4",
+    "goalId": "goal_4",
+    "createdAt": "2024-01-12T20:45:00Z",
+    "type": "milestone",
+    "content": "Kids' college fund hit 36%! 🎓 Starting early really does make a difference. They might not understand it now, but they'll thank me later!",
+    "mediaUrl": null,
+    "metrics": {
+      "likes": 27,
+      "comments": 11,
+      "reposts": 4
+    },
+    "likedByMe": true,
+    "repostedByMe": false
+  },
+  {
+    "id": "post_7",
+    "userId": "user_6",
+    "goalId": "goal_6",
+    "createdAt": "2024-01-12T13:15:00Z",
+    "type": "update",
+    "content": "Tesla fund update: Sold my old car and added $2,000 to the fund! 🚗⚡ Getting closer to that Model 3 dream!",
+    "mediaUrl": null,
+    "metrics": {
+      "likes": 22,
+      "comments": 7,
+      "reposts": 3
+    },
+    "likedByMe": false,
+    "repostedByMe": false
+  },
+  {
+    "id": "post_8",
+    "userId": "user_10",
+    "goalId": "goal_10",
+    "createdAt": "2024-01-11T18:30:00Z",
+    "type": "tip",
+    "content": "FIRE tip: Track your net worth monthly, not daily. Daily fluctuations can be discouraging, but monthly progress shows the real trend! 🔥",
+    "mediaUrl": null,
+    "metrics": {
+      "likes": 35,
+      "comments": 13,
+      "reposts": 8
+    },
+    "likedByMe": true,
+    "repostedByMe": false
+  },
+  {
+    "id": "post_9",
+    "userId": "user_8",
+    "goalId": "goal_8",
+    "createdAt": "2024-01-11T10:00:00Z",
+    "type": "milestone",
+    "content": "Startup capital fund reached 36%! 💼 The entrepreneurial journey is full of ups and downs, but every milestone counts!",
+    "mediaUrl": null,
+    "metrics": {
+      "likes": 29,
+      "comments": 10,
+      "reposts": 6
+    },
+    "likedByMe": false,
+    "repostedByMe": false
+  },
+  {
+    "id": "post_10",
+    "userId": "user_9",
+    "goalId": "goal_9",
+    "createdAt": "2024-01-10T15:45:00Z",
+    "type": "celebration",
+    "content": "MBA fund milestone: 30% complete! 📚 Education is the best investment you can make in yourself. Can't wait to start this new chapter!",
+    "mediaUrl": null,
+    "metrics": {
+      "likes": 33,
+      "comments": 14,
+      "reposts": 5
+    },
+    "likedByMe": false,
+    "repostedByMe": false
+  },
+  {
+    "id": "post_11",
+    "userId": "user_1",
+    "goalId": "goal_11",
+    "createdAt": "2024-01-10T08:20:00Z",
+    "type": "update",
+    "content": "Emergency fund progress: 75% complete! 🛡️ Building this safety net has given me so much peace of mind. Almost there!",
+    "mediaUrl": null,
+    "metrics": {
+      "likes": 18,
+      "comments": 5,
+      "reposts": 2
+    },
+    "likedByMe": false,
+    "repostedByMe": false
+  },
+  {
+    "id": "post_12",
+    "userId": "user_3",
+    "goalId": "goal_12",
+    "createdAt": "2024-01-09T19:30:00Z",
+    "type": "milestone",
+    "content": "New laptop fund: 75% complete! 💻 My current laptop is on its last legs, but I'm so close to getting that upgrade!",
+    "mediaUrl": null,
+    "metrics": {
+      "likes": 16,
+      "comments": 4,
+      "reposts": 1
+    },
+    "likedByMe": false,
+    "repostedByMe": false
+  }
+]

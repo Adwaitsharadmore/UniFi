@@ -1,0 +1,432 @@
+{
+  "exercises": [
+    {
+      "id": "ex_budget_1_1",
+      "type": "multiple_choice",
+      "prompt": "What is the primary purpose of a budget?",
+      "difficulty": 1,
+      "options": [
+        "To track your spending",
+        "To plan how to spend your money",
+        "To save money automatically",
+        "To invest in stocks"
+      ],
+      "correctIndex": 1,
+      "explanation": "A budget is a plan for how you will spend your money, helping you allocate income to different categories and achieve your financial goals."
+    },
+    {
+      "id": "ex_budget_1_2",
+      "type": "true_false",
+      "prompt": "A budget should only include your monthly expenses.",
+      "difficulty": 1,
+      "correct": false,
+      "explanation": "A budget should include all your income and expenses, including irregular ones like annual insurance payments or quarterly taxes."
+    },
+    {
+      "id": "ex_budget_1_3",
+      "type": "tap_tokens",
+      "prompt": "Select the essential components of a budget:",
+      "difficulty": 2,
+      "tokens": ["Income", "Fixed Expenses", "Variable Expenses", "Savings", "Entertainment", "Emergency Fund", "Investments"],
+      "correct": ["Income", "Fixed Expenses", "Variable Expenses", "Savings"]
+    },
+    {
+      "id": "ex_budget_1_4",
+      "type": "fill_in_numeric",
+      "prompt": "If you earn $3,000 per month and want to save 20%, how much should you save?",
+      "difficulty": 2,
+      "unit": "$",
+      "correct": 600,
+      "tolerance": 0
+    },
+    {
+      "id": "ex_budget_1_5",
+      "type": "order_steps",
+      "prompt": "Put these budget creation steps in the correct order:",
+      "difficulty": 2,
+      "steps": [
+        "List all your income sources",
+        "Track your current spending",
+        "Categorize your expenses",
+        "Set spending limits for each category",
+        "Review and adjust monthly"
+      ],
+      "correctOrder": [
+        "List all your income sources",
+        "Track your current spending",
+        "Categorize your expenses",
+        "Set spending limits for each category",
+        "Review and adjust monthly"
+      ]
+    },
+    {
+      "id": "ex_budget_2_1",
+      "type": "budget_scenario",
+      "prompt": "You have a monthly income of $4,000. Your fixed expenses are: Rent ($1,200), Car Payment ($300), Insurance ($150), Phone ($80). You want to save $800 per month. How much do you have left for variable expenses?",
+      "difficulty": 2,
+      "context": {
+        "incomeMonthly": 4000,
+        "fixed": {
+          "Rent": 1200,
+          "Car Payment": 300,
+          "Insurance": 150,
+          "Phone": 80
+        },
+        "variable": {},
+        "goalMonthly": 800
+      },
+      "question": "What's your remaining budget for variable expenses?",
+      "options": [
+        "$1,470",
+        "$1,370",
+        "$1,570",
+        "$1,270"
+      ],
+      "correctIndex": 0,
+      "explanation": "$4,000 - $1,200 - $300 - $150 - $80 - $800 = $1,470 remaining for variable expenses."
+    },
+    {
+      "id": "ex_budget_2_2",
+      "type": "categorize_txn",
+      "prompt": "Categorize these transactions:",
+      "difficulty": 2,
+      "transactions": [
+        { "desc": "Grocery Store", "amount": 85.50 },
+        { "desc": "Netflix Subscription", "amount": 15.99 },
+        { "desc": "Gas Station", "amount": 45.00 },
+        { "desc": "Restaurant Dinner", "amount": 32.75 }
+      ],
+      "categories": ["Food & Dining", "Entertainment", "Transportation", "Utilities"],
+      "correct": ["Food & Dining", "Entertainment", "Transportation", "Food & Dining"]
+    },
+    {
+      "id": "ex_budget_2_3",
+      "type": "multiple_choice",
+      "prompt": "What's the best way to stick to your budget?",
+      "difficulty": 2,
+      "options": [
+        "Check your budget once a month",
+        "Track expenses daily and review weekly",
+        "Set it and forget it",
+        "Only budget for major expenses"
+      ],
+      "correctIndex": 1,
+      "explanation": "Regular tracking and review helps you stay on top of your spending and make adjustments as needed."
+    },
+    {
+      "id": "ex_budget_2_4",
+      "type": "true_false",
+      "prompt": "It's okay to go over budget occasionally as long as you make up for it next month.",
+      "difficulty": 2,
+      "correct": true,
+      "explanation": "Budgets should be flexible. Occasional overspending is normal, but you should adjust your budget or spending to compensate."
+    },
+    {
+      "id": "ex_budget_2_5",
+      "type": "fill_in_numeric",
+      "prompt": "If your monthly income is $5,000 and you spend $3,500, what percentage are you saving?",
+      "difficulty": 2,
+      "unit": "%",
+      "correct": 30,
+      "tolerance": 1
+    },
+    {
+      "id": "ex_budget_2_6",
+      "type": "tap_tokens",
+      "prompt": "Which are examples of fixed expenses?",
+      "difficulty": 1,
+      "tokens": ["Rent", "Groceries", "Car Payment", "Entertainment", "Insurance", "Gas", "Phone Bill"],
+      "correct": ["Rent", "Car Payment", "Insurance", "Phone Bill"]
+    },
+    {
+      "id": "ex_budget_3_1",
+      "type": "multiple_choice",
+      "prompt": "What's the most effective way to track your spending?",
+      "difficulty": 2,
+      "options": [
+        "Keep receipts and add them up monthly",
+        "Use a budgeting app or spreadsheet",
+        "Estimate your spending",
+        "Only track large purchases"
+      ],
+      "correctIndex": 1,
+      "explanation": "Using a budgeting app or spreadsheet provides real-time tracking and helps you stay aware of your spending patterns."
+    },
+    {
+      "id": "ex_budget_3_2",
+      "type": "true_false",
+      "prompt": "You should track every single expense, no matter how small.",
+      "difficulty": 2,
+      "correct": false,
+      "explanation": "While detailed tracking is helpful, you don't need to track every penny. Focus on meaningful expenses and use categories for small purchases."
+    },
+    {
+      "id": "ex_budget_3_3",
+      "type": "order_steps",
+      "prompt": "Order these expense tracking steps:",
+      "difficulty": 2,
+      "steps": [
+        "Record the transaction immediately",
+        "Categorize the expense",
+        "Check if you're within budget",
+        "Update your running totals",
+        "Review patterns weekly"
+      ],
+      "correctOrder": [
+        "Record the transaction immediately",
+        "Categorize the expense",
+        "Check if you're within budget",
+        "Update your running totals",
+        "Review patterns weekly"
+      ]
+    },
+    {
+      "id": "ex_budget_3_4",
+      "type": "fill_in_numeric",
+      "prompt": "If you budget $200 for groceries but spend $180, how much is left in that category?",
+      "difficulty": 1,
+      "unit": "$",
+      "correct": 20,
+      "tolerance": 0
+    },
+    {
+      "id": "ex_budget_3_5",
+      "type": "tap_tokens",
+      "prompt": "Which tools can help you track expenses?",
+      "difficulty": 1,
+      "tokens": ["Mobile Apps", "Spreadsheets", "Bank Statements", "Receipts", "Memory", "Calculator"],
+      "correct": ["Mobile Apps", "Spreadsheets", "Bank Statements", "Receipts"]
+    },
+    {
+      "id": "ex_income_1_1",
+      "type": "multiple_choice",
+      "prompt": "What is considered gross income?",
+      "difficulty": 1,
+      "options": [
+        "Income after taxes and deductions",
+        "Income before taxes and deductions",
+        "Income from investments only",
+        "Income from your main job only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Gross income is your total income before any taxes, deductions, or other expenses are taken out."
+    },
+    {
+      "id": "ex_income_1_2",
+      "type": "true_false",
+      "prompt": "Side hustles and freelance work count as income.",
+      "difficulty": 1,
+      "correct": true,
+      "explanation": "All sources of money you receive, including side hustles, freelance work, and part-time jobs, count as income."
+    },
+    {
+      "id": "ex_income_1_3",
+      "type": "tap_tokens",
+      "prompt": "Which are sources of income?",
+      "difficulty": 1,
+      "tokens": ["Salary", "Freelance Work", "Investment Dividends", "Gifts", "Rent Payment", "Side Hustle", "Loan"],
+      "correct": ["Salary", "Freelance Work", "Investment Dividends", "Side Hustle"]
+    },
+    {
+      "id": "ex_income_1_4",
+      "type": "fill_in_numeric",
+      "prompt": "If you earn $25 per hour and work 40 hours per week, what's your weekly gross income?",
+      "difficulty": 2,
+      "unit": "$",
+      "correct": 1000,
+      "tolerance": 0
+    },
+    {
+      "id": "ex_income_1_5",
+      "type": "multiple_choice",
+      "prompt": "What's the difference between gross and net income?",
+      "difficulty": 2,
+      "options": [
+        "Gross is monthly, net is yearly",
+        "Gross is before deductions, net is after",
+        "Gross is from work, net is from investments",
+        "There's no difference"
+      ],
+      "correctIndex": 1,
+      "explanation": "Gross income is before taxes and deductions, while net income is what you actually take home after all deductions."
+    },
+    {
+      "id": "ex_income_2_1",
+      "type": "multiple_choice",
+      "prompt": "Which is an example of a fixed expense?",
+      "difficulty": 1,
+      "options": [
+        "Groceries",
+        "Rent",
+        "Gas",
+        "Entertainment"
+      ],
+      "correctIndex": 1,
+      "explanation": "Rent is a fixed expense because it stays the same amount each month, unlike variable expenses that can change."
+    },
+    {
+      "id": "ex_income_2_2",
+      "type": "true_false",
+      "prompt": "Variable expenses are easier to control than fixed expenses.",
+      "difficulty": 2,
+      "correct": true,
+      "explanation": "Variable expenses like entertainment and dining out are more flexible and easier to adjust than fixed expenses like rent or car payments."
+    },
+    {
+      "id": "ex_income_2_3",
+      "type": "categorize_txn",
+      "prompt": "Categorize these as fixed or variable expenses:",
+      "difficulty": 2,
+      "transactions": [
+        { "desc": "Mortgage Payment", "amount": 1200 },
+        { "desc": "Electric Bill", "amount": 85 },
+        { "desc": "Dining Out", "amount": 45 },
+        { "desc": "Car Insurance", "amount": 120 }
+      ],
+      "categories": ["Fixed", "Variable"],
+      "correct": ["Fixed", "Variable", "Variable", "Fixed"]
+    },
+    {
+      "id": "ex_income_2_4",
+      "type": "fill_in_numeric",
+      "prompt": "If your fixed expenses total $2,000 and variable expenses are $800, what percentage of a $4,000 income goes to fixed expenses?",
+      "difficulty": 2,
+      "unit": "%",
+      "correct": 50,
+      "tolerance": 1
+    },
+    {
+      "id": "ex_income_2_5",
+      "type": "tap_tokens",
+      "prompt": "Which are variable expenses?",
+      "difficulty": 1,
+      "tokens": ["Rent", "Groceries", "Car Payment", "Entertainment", "Insurance", "Gas", "Utilities"],
+      "correct": ["Groceries", "Entertainment", "Gas"]
+    },
+    {
+      "id": "ex_emergency_1_1",
+      "type": "multiple_choice",
+      "prompt": "What is an emergency fund?",
+      "difficulty": 1,
+      "options": [
+        "Money for vacations",
+        "Money set aside for unexpected expenses",
+        "Money for investments",
+        "Money for daily expenses"
+      ],
+      "correctIndex": 1,
+      "explanation": "An emergency fund is money set aside specifically for unexpected expenses like job loss, medical bills, or major repairs."
+    },
+    {
+      "id": "ex_emergency_1_2",
+      "type": "true_false",
+      "prompt": "An emergency fund should be kept in a high-risk investment account.",
+      "difficulty": 1,
+      "correct": false,
+      "explanation": "Emergency funds should be kept in easily accessible, low-risk accounts like savings accounts or money market accounts."
+    },
+    {
+      "id": "ex_emergency_1_3",
+      "type": "fill_in_numeric",
+      "prompt": "How many months of expenses should a basic emergency fund cover?",
+      "difficulty": 2,
+      "unit": "",
+      "correct": 3,
+      "tolerance": 1
+    },
+    {
+      "id": "ex_emergency_1_4",
+      "type": "tap_tokens",
+      "prompt": "Which are valid reasons to use an emergency fund?",
+      "difficulty": 2,
+      "tokens": ["Job Loss", "Medical Emergency", "Car Repair", "Vacation", "New TV", "Home Repair", "Shopping"],
+      "correct": ["Job Loss", "Medical Emergency", "Car Repair", "Home Repair"]
+    },
+    {
+      "id": "ex_emergency_1_5",
+      "type": "multiple_choice",
+      "prompt": "What's the first step in building an emergency fund?",
+      "difficulty": 2,
+      "options": [
+        "Invest in stocks",
+        "Calculate your monthly expenses",
+        "Open a credit card",
+        "Buy insurance"
+      ],
+      "correctIndex": 1,
+      "explanation": "First, calculate your monthly expenses to determine how much you need to save for your emergency fund."
+    },
+    {
+      "id": "ex_emergency_2_1",
+      "type": "budget_scenario",
+      "prompt": "You have monthly expenses of $3,000. You want to build a 6-month emergency fund. How much do you need to save?",
+      "difficulty": 2,
+      "context": {
+        "incomeMonthly": 5000,
+        "fixed": {},
+        "variable": {},
+        "goalMonthly": 0
+      },
+      "question": "How much should your emergency fund contain?",
+      "options": [
+        "$18,000",
+        "$15,000",
+        "$12,000",
+        "$9,000"
+      ],
+      "correctIndex": 0,
+      "explanation": "$3,000 × 6 months = $18,000 for a 6-month emergency fund."
+    },
+    {
+      "id": "ex_emergency_2_2",
+      "type": "true_false",
+      "prompt": "You should build your emergency fund before paying off high-interest debt.",
+      "difficulty": 2,
+      "correct": false,
+      "explanation": "It's generally better to pay off high-interest debt first, then build your emergency fund, as the debt costs more than the emergency fund earns."
+    },
+    {
+      "id": "ex_emergency_2_3",
+      "type": "multiple_choice",
+      "prompt": "What's the best way to build an emergency fund?",
+      "difficulty": 2,
+      "options": [
+        "Save large amounts occasionally",
+        "Set up automatic transfers",
+        "Only save when you have extra money",
+        "Use credit cards for emergencies"
+      ],
+      "correctIndex": 1,
+      "explanation": "Automatic transfers ensure consistent saving and make it easier to build your emergency fund over time."
+    },
+    {
+      "id": "ex_emergency_2_4",
+      "type": "fill_in_numeric",
+      "prompt": "If you save $200 per month, how many months will it take to build a $6,000 emergency fund?",
+      "difficulty": 2,
+      "unit": "",
+      "correct": 30,
+      "tolerance": 0
+    },
+    {
+      "id": "ex_emergency_2_5",
+      "type": "order_steps",
+      "prompt": "Order these emergency fund building steps:",
+      "difficulty": 2,
+      "steps": [
+        "Calculate monthly expenses",
+        "Set a savings goal",
+        "Open a dedicated savings account",
+        "Set up automatic transfers",
+        "Track your progress"
+      ],
+      "correctOrder": [
+        "Calculate monthly expenses",
+        "Set a savings goal",
+        "Open a dedicated savings account",
+        "Set up automatic transfers",
+        "Track your progress"
+      ]
+    }
+  ]
+}

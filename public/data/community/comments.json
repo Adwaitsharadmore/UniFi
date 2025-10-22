@@ -1,0 +1,121 @@
+[
+  {
+    "id": "comment_1",
+    "postId": "post_1",
+    "userId": "user_2",
+    "createdAt": "2024-01-15T11:15:00Z",
+    "text": "Amazing progress! Home ownership is such a great goal. Keep it up! 🏠"
+  },
+  {
+    "id": "comment_2",
+    "postId": "post_1",
+    "userId": "user_4",
+    "createdAt": "2024-01-15T12:30:00Z",
+    "text": "35% is huge! What's your strategy for staying motivated during the long haul?"
+  },
+  {
+    "id": "comment_3",
+    "postId": "post_2",
+    "userId": "user_1",
+    "createdAt": "2024-01-14T17:20:00Z",
+    "text": "YES! 🎉 Debt freedom is the best feeling. You're almost there!"
+  },
+  {
+    "id": "comment_4",
+    "postId": "post_2",
+    "userId": "user_5",
+    "createdAt": "2024-01-14T18:45:00Z",
+    "text": "Inspiring! What's your secret to staying consistent with payments?"
+  },
+  {
+    "id": "comment_5",
+    "postId": "post_3",
+    "userId": "user_2",
+    "createdAt": "2024-01-14T10:30:00Z",
+    "text": "Congratulations! 🎉 Emergency funds are so important. You should be proud!"
+  },
+  {
+    "id": "comment_6",
+    "postId": "post_3",
+    "userId": "user_7",
+    "createdAt": "2024-01-14T11:00:00Z",
+    "text": "6 months is the gold standard! Great job building that security net."
+  },
+  {
+    "id": "comment_7",
+    "postId": "post_4",
+    "userId": "user_1",
+    "createdAt": "2024-01-13T15:45:00Z",
+    "text": "Love the 50/30/20 rule! It's so simple but effective. Thanks for sharing! 💡"
+  },
+  {
+    "id": "comment_8",
+    "postId": "post_4",
+    "userId": "user_5",
+    "createdAt": "2024-01-13T16:20:00Z",
+    "text": "I've been struggling with budgeting. This might be exactly what I need!"
+  },
+  {
+    "id": "comment_9",
+    "postId": "post_5",
+    "userId": "user_10",
+    "createdAt": "2024-01-13T12:15:00Z",
+    "text": "15% is fantastic! The earlier you start, the more compound interest works for you."
+  },
+  {
+    "id": "comment_10",
+    "postId": "post_6",
+    "userId": "user_3",
+    "createdAt": "2024-01-12T21:30:00Z",
+    "text": "Starting early is everything! Your kids are lucky to have such a thoughtful parent. 👨‍👧‍👦"
+  },
+  {
+    "id": "comment_11",
+    "postId": "post_6",
+    "userId": "user_7",
+    "createdAt": "2024-01-12T22:00:00Z",
+    "text": "36% is great progress! College costs are crazy these days, so every bit helps."
+  },
+  {
+    "id": "comment_12",
+    "postId": "post_7",
+    "userId": "user_1",
+    "createdAt": "2024-01-12T14:30:00Z",
+    "text": "Smart move selling the old car! That's a big boost to your Tesla fund! 🚗"
+  },
+  {
+    "id": "comment_13",
+    "postId": "post_8",
+    "userId": "user_7",
+    "createdAt": "2024-01-11T19:15:00Z",
+    "text": "Great advice! I used to check daily and it was so stressful. Monthly tracking is much better."
+  },
+  {
+    "id": "comment_14",
+    "postId": "post_8",
+    "userId": "user_4",
+    "createdAt": "2024-01-11T20:00:00Z",
+    "text": "FIRE journey is a marathon, not a sprint. Thanks for the reminder! 🔥"
+  },
+  {
+    "id": "comment_15",
+    "postId": "post_9",
+    "userId": "user_10",
+    "createdAt": "2024-01-11T11:30:00Z",
+    "text": "Entrepreneurship is tough but rewarding! Keep pushing forward! 💼"
+  },
+  {
+    "id": "comment_16",
+    "postId": "post_10",
+    "userId": "user_4",
+    "createdAt": "2024-01-10T16:30:00Z",
+    "text": "MBA is such a great investment! Which program are you considering?"
+  },
+  {
+    "id": "comment_17",
+    "postId": "post_10",
+    "userId": "user_7",
+    "createdAt": "2024-01-10T17:00:00Z",
+    "text": "30% is solid progress! Education always pays for itself in the long run. 📚"
+  }
+]

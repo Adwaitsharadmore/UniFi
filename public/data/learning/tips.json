@@ -1,0 +1,148 @@
+{
+  "tips": [
+    {
+      "id": "tip_budgeting_basics",
+      "title": "Budgeting Basics",
+      "bullets": [
+        "Start by tracking your income and expenses for one month",
+        "Use the 50/30/20 rule: 50% needs, 30% wants, 20% savings",
+        "Review and adjust your budget monthly",
+        "Use budgeting apps to automate tracking",
+        "Set realistic goals and celebrate small wins"
+      ],
+      "link": "https://example.com/budgeting-guide"
+    },
+    {
+      "id": "tip_income_expense",
+      "title": "Income vs Expense Management",
+      "bullets": [
+        "Always spend less than you earn",
+        "Distinguish between needs and wants",
+        "Build a buffer for irregular expenses",
+        "Consider multiple income streams",
+        "Track both gross and net income"
+      ],
+      "link": "https://example.com/income-expense-guide"
+    },
+    {
+      "id": "tip_emergency_fund",
+      "title": "Emergency Fund Essentials",
+      "bullets": [
+        "Aim for 3-6 months of expenses",
+        "Keep it in a high-yield savings account",
+        "Only use for true emergencies",
+        "Start small - even $500 helps",
+        "Automate your emergency fund savings"
+      ],
+      "link": "https://example.com/emergency-fund-guide"
+    },
+    {
+      "id": "tip_long_term_goals",
+      "title": "Setting Long-Term Goals",
+      "bullets": [
+        "Use the SMART framework: Specific, Measurable, Achievable, Relevant, Time-bound",
+        "Break large goals into smaller milestones",
+        "Review and adjust goals annually",
+        "Prioritize goals by importance and timeline",
+        "Consider inflation in your calculations"
+      ],
+      "link": "https://example.com/long-term-goals-guide"
+    },
+    {
+      "id": "tip_envelopes",
+      "title": "Envelope Method & 50/30/20 Rule",
+      "bullets": [
+        "Digital envelopes work just as well as physical ones",
+        "50% for needs (housing, food, utilities)",
+        "30% for wants (entertainment, dining out)",
+        "20% for savings and debt repayment",
+        "Adjust percentages based on your situation"
+      ],
+      "link": "https://example.com/envelope-method-guide"
+    },
+    {
+      "id": "tip_debt_save",
+      "title": "Debt vs Saving Balance",
+      "bullets": [
+        "Pay minimums on all debts first",
+        "Focus on high-interest debt before saving",
+        "Build a small emergency fund while paying debt",
+        "Consider debt consolidation for multiple debts",
+        "Celebrate each debt payment milestone"
+      ],
+      "link": "https://example.com/debt-saving-guide"
+    },
+    {
+      "id": "tip_credit_basics",
+      "title": "Credit Fundamentals",
+      "bullets": [
+        "Credit is borrowing money you must repay",
+        "Good credit saves you money on loans",
+        "Pay bills on time to build credit",
+        "Keep credit utilization below 30%",
+        "Check your credit report regularly"
+      ],
+      "link": "https://example.com/credit-basics-guide"
+    },
+    {
+      "id": "tip_credit_score",
+      "title": "Improving Your Credit Score",
+      "bullets": [
+        "Payment history is the most important factor",
+        "Keep old accounts open to maintain credit history",
+        "Don't apply for too many new accounts",
+        "Pay down balances to improve utilization",
+        "Dispute errors on your credit report"
+      ],
+      "link": "https://example.com/credit-score-guide"
+    },
+    {
+      "id": "tip_loan_types",
+      "title": "Understanding Loan Types",
+      "bullets": [
+        "Secured loans use collateral (car, house)",
+        "Unsecured loans rely on creditworthiness",
+        "Fixed rates stay the same, variable rates change",
+        "Compare APRs, not just interest rates",
+        "Read all terms before signing"
+      ],
+      "link": "https://example.com/loan-types-guide"
+    },
+    {
+      "id": "tip_investment_basics",
+      "title": "Investment Fundamentals",
+      "bullets": [
+        "Start with index funds for diversification",
+        "Time in market beats timing the market",
+        "Dollar-cost averaging reduces risk",
+        "Understand your risk tolerance",
+        "Invest for the long term"
+      ],
+      "link": "https://example.com/investment-basics-guide"
+    },
+    {
+      "id": "tip_risk_return",
+      "title": "Risk vs Return",
+      "bullets": [
+        "Higher potential returns come with higher risk",
+        "Diversification reduces overall risk",
+        "Your age affects your risk tolerance",
+        "Don't invest money you need soon",
+        "Rebalance your portfolio regularly"
+      ],
+      "link": "https://example.com/risk-return-guide"
+    },
+    {
+      "id": "tip_retirement",
+      "title": "Retirement Planning",
+      "bullets": [
+        "Start saving for retirement as early as possible",
+        "Take advantage of employer 401(k) matching",
+        "Consider Roth vs Traditional IRAs",
+        "Aim to save 15% of your income",
+        "Increase contributions with raises"
+      ],
+      "link": "https://example.com/retirement-planning-guide"
+    }
+  ]
+}

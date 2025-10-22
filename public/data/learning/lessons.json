@@ -1,0 +1,341 @@
+{
+  "lessons": [
+    {
+      "id": "lesson_budget_1",
+      "skillId": "budgeting_basics",
+      "title": "What is a Budget?",
+      "exercises": [
+        { "id": "ex_budget_1_1" },
+        { "id": "ex_budget_1_2" },
+        { "id": "ex_budget_1_3" },
+        { "id": "ex_budget_1_4" },
+        { "id": "ex_budget_1_5" }
+      ]
+    },
+    {
+      "id": "lesson_budget_2",
+      "skillId": "budgeting_basics",
+      "title": "Creating Your First Budget",
+      "exercises": [
+        { "id": "ex_budget_2_1" },
+        { "id": "ex_budget_2_2" },
+        { "id": "ex_budget_2_3" },
+        { "id": "ex_budget_2_4" },
+        { "id": "ex_budget_2_5" },
+        { "id": "ex_budget_2_6" }
+      ]
+    },
+    {
+      "id": "lesson_budget_3",
+      "skillId": "budgeting_basics",
+      "title": "Tracking Your Spending",
+      "exercises": [
+        { "id": "ex_budget_3_1" },
+        { "id": "ex_budget_3_2" },
+        { "id": "ex_budget_3_3" },
+        { "id": "ex_budget_3_4" },
+        { "id": "ex_budget_3_5" }
+      ]
+    },
+    {
+      "id": "lesson_income_1",
+      "skillId": "income_vs_expense",
+      "title": "Understanding Income",
+      "exercises": [
+        { "id": "ex_income_1_1" },
+        { "id": "ex_income_1_2" },
+        { "id": "ex_income_1_3" },
+        { "id": "ex_income_1_4" },
+        { "id": "ex_income_1_5" }
+      ]
+    },
+    {
+      "id": "lesson_income_2",
+      "skillId": "income_vs_expense",
+      "title": "Fixed vs Variable Expenses",
+      "exercises": [
+        { "id": "ex_income_2_1" },
+        { "id": "ex_income_2_2" },
+        { "id": "ex_income_2_3" },
+        { "id": "ex_income_2_4" },
+        { "id": "ex_income_2_5" }
+      ]
+    },
+    {
+      "id": "lesson_emergency_1",
+      "skillId": "emergency_fund",
+      "title": "Why You Need an Emergency Fund",
+      "exercises": [
+        { "id": "ex_emergency_1_1" },
+        { "id": "ex_emergency_1_2" },
+        { "id": "ex_emergency_1_3" },
+        { "id": "ex_emergency_1_4" },
+        { "id": "ex_emergency_1_5" }
+      ]
+    },
+    {
+      "id": "lesson_emergency_2",
+      "skillId": "emergency_fund",
+      "title": "Building Your Emergency Fund",
+      "exercises": [
+        { "id": "ex_emergency_2_1" },
+        { "id": "ex_emergency_2_2" },
+        { "id": "ex_emergency_2_3" },
+        { "id": "ex_emergency_2_4" },
+        { "id": "ex_emergency_2_5" }
+      ]
+    },
+    {
+      "id": "lesson_goals_1",
+      "skillId": "long_term_goals",
+      "title": "Setting Financial Goals",
+      "exercises": [
+        { "id": "ex_goals_1_1" },
+        { "id": "ex_goals_1_2" },
+        { "id": "ex_goals_1_3" },
+        { "id": "ex_goals_1_4" },
+        { "id": "ex_goals_1_5" }
+      ]
+    },
+    {
+      "id": "lesson_goals_2",
+      "skillId": "long_term_goals",
+      "title": "SMART Goals Framework",
+      "exercises": [
+        { "id": "ex_goals_2_1" },
+        { "id": "ex_goals_2_2" },
+        { "id": "ex_goals_2_3" },
+        { "id": "ex_goals_2_4" },
+        { "id": "ex_goals_2_5" }
+      ]
+    },
+    {
+      "id": "lesson_envelopes_1",
+      "skillId": "envelopes_50_30_20",
+      "title": "The Envelope Method",
+      "exercises": [
+        { "id": "ex_envelopes_1_1" },
+        { "id": "ex_envelopes_1_2" },
+        { "id": "ex_envelopes_1_3" },
+        { "id": "ex_envelopes_1_4" },
+        { "id": "ex_envelopes_1_5" }
+      ]
+    },
+    {
+      "id": "lesson_envelopes_2",
+      "skillId": "envelopes_50_30_20",
+      "title": "The 50/30/20 Rule",
+      "exercises": [
+        { "id": "ex_envelopes_2_1" },
+        { "id": "ex_envelopes_2_2" },
+        { "id": "ex_envelopes_2_3" },
+        { "id": "ex_envelopes_2_4" },
+        { "id": "ex_envelopes_2_5" }
+      ]
+    },
+    {
+      "id": "lesson_envelopes_3",
+      "skillId": "envelopes_50_30_20",
+      "title": "Digital Envelope Systems",
+      "exercises": [
+        { "id": "ex_envelopes_3_1" },
+        { "id": "ex_envelopes_3_2" },
+        { "id": "ex_envelopes_3_3" },
+        { "id": "ex_envelopes_3_4" },
+        { "id": "ex_envelopes_3_5" }
+      ]
+    },
+    {
+      "id": "lesson_debt_1",
+      "skillId": "debt_vs_save",
+      "title": "Debt vs Saving Priority",
+      "exercises": [
+        { "id": "ex_debt_1_1" },
+        { "id": "ex_debt_1_2" },
+        { "id": "ex_debt_1_3" },
+        { "id": "ex_debt_1_4" },
+        { "id": "ex_debt_1_5" }
+      ]
+    },
+    {
+      "id": "lesson_debt_2",
+      "skillId": "debt_vs_save",
+      "title": "Debt Payoff Strategies",
+      "exercises": [
+        { "id": "ex_debt_2_1" },
+        { "id": "ex_debt_2_2" },
+        { "id": "ex_debt_2_3" },
+        { "id": "ex_debt_2_4" },
+        { "id": "ex_debt_2_5" }
+      ]
+    },
+    {
+      "id": "lesson_credit_1",
+      "skillId": "credit_basics",
+      "title": "What is Credit?",
+      "exercises": [
+        { "id": "ex_credit_1_1" },
+        { "id": "ex_credit_1_2" },
+        { "id": "ex_credit_1_3" },
+        { "id": "ex_credit_1_4" },
+        { "id": "ex_credit_1_5" }
+      ]
+    },
+    {
+      "id": "lesson_credit_2",
+      "skillId": "credit_basics",
+      "title": "Types of Credit",
+      "exercises": [
+        { "id": "ex_credit_2_1" },
+        { "id": "ex_credit_2_2" },
+        { "id": "ex_credit_2_3" },
+        { "id": "ex_credit_2_4" },
+        { "id": "ex_credit_2_5" }
+      ]
+    },
+    {
+      "id": "lesson_credit_3",
+      "skillId": "credit_basics",
+      "title": "Using Credit Wisely",
+      "exercises": [
+        { "id": "ex_credit_3_1" },
+        { "id": "ex_credit_3_2" },
+        { "id": "ex_credit_3_3" },
+        { "id": "ex_credit_3_4" },
+        { "id": "ex_credit_3_5" }
+      ]
+    },
+    {
+      "id": "lesson_score_1",
+      "skillId": "credit_score",
+      "title": "Understanding Credit Scores",
+      "exercises": [
+        { "id": "ex_score_1_1" },
+        { "id": "ex_score_1_2" },
+        { "id": "ex_score_1_3" },
+        { "id": "ex_score_1_4" },
+        { "id": "ex_score_1_5" }
+      ]
+    },
+    {
+      "id": "lesson_score_2",
+      "skillId": "credit_score",
+      "title": "Improving Your Credit Score",
+      "exercises": [
+        { "id": "ex_score_2_1" },
+        { "id": "ex_score_2_2" },
+        { "id": "ex_score_2_3" },
+        { "id": "ex_score_2_4" },
+        { "id": "ex_score_2_5" }
+      ]
+    },
+    {
+      "id": "lesson_loans_1",
+      "skillId": "loan_types",
+      "title": "Types of Loans",
+      "exercises": [
+        { "id": "ex_loans_1_1" },
+        { "id": "ex_loans_1_2" },
+        { "id": "ex_loans_1_3" },
+        { "id": "ex_loans_1_4" },
+        { "id": "ex_loans_1_5" }
+      ]
+    },
+    {
+      "id": "lesson_loans_2",
+      "skillId": "loan_types",
+      "title": "Loan Terms and Interest",
+      "exercises": [
+        { "id": "ex_loans_2_1" },
+        { "id": "ex_loans_2_2" },
+        { "id": "ex_loans_2_3" },
+        { "id": "ex_loans_2_4" },
+        { "id": "ex_loans_2_5" }
+      ]
+    },
+    {
+      "id": "lesson_invest_1",
+      "skillId": "investment_basics",
+      "title": "What is Investing?",
+      "exercises": [
+        { "id": "ex_invest_1_1" },
+        { "id": "ex_invest_1_2" },
+        { "id": "ex_invest_1_3" },
+        { "id": "ex_invest_1_4" },
+        { "id": "ex_invest_1_5" }
+      ]
+    },
+    {
+      "id": "lesson_invest_2",
+      "skillId": "investment_basics",
+      "title": "Types of Investments",
+      "exercises": [
+        { "id": "ex_invest_2_1" },
+        { "id": "ex_invest_2_2" },
+        { "id": "ex_invest_2_3" },
+        { "id": "ex_invest_2_4" },
+        { "id": "ex_invest_2_5" }
+      ]
+    },
+    {
+      "id": "lesson_invest_3",
+      "skillId": "investment_basics",
+      "title": "Getting Started with Investing",
+      "exercises": [
+        { "id": "ex_invest_3_1" },
+        { "id": "ex_invest_3_2" },
+        { "id": "ex_invest_3_3" },
+        { "id": "ex_invest_3_4" },
+        { "id": "ex_invest_3_5" }
+      ]
+    },
+    {
+      "id": "lesson_risk_1",
+      "skillId": "risk_return",
+      "title": "Understanding Risk",
+      "exercises": [
+        { "id": "ex_risk_1_1" },
+        { "id": "ex_risk_1_2" },
+        { "id": "ex_risk_1_3" },
+        { "id": "ex_risk_1_4" },
+        { "id": "ex_risk_1_5" }
+      ]
+    },
+    {
+      "id": "lesson_risk_2",
+      "skillId": "risk_return",
+      "title": "Risk vs Return Trade-offs",
+      "exercises": [
+        { "id": "ex_risk_2_1" },
+        { "id": "ex_risk_2_2" },
+        { "id": "ex_risk_2_3" },
+        { "id": "ex_risk_2_4" },
+        { "id": "ex_risk_2_5" }
+      ]
+    },
+    {
+      "id": "lesson_retirement_1",
+      "skillId": "retirement_planning",
+      "title": "Retirement Accounts",
+      "exercises": [
+        { "id": "ex_retirement_1_1" },
+        { "id": "ex_retirement_1_2" },
+        { "id": "ex_retirement_1_3" },
+        { "id": "ex_retirement_1_4" },
+        { "id": "ex_retirement_1_5" }
+      ]
+    },
+    {
+      "id": "lesson_retirement_2",
+      "skillId": "retirement_planning",
+      "title": "Planning for Retirement",
+      "exercises": [
+        { "id": "ex_retirement_2_1" },
+        { "id": "ex_retirement_2_2" },
+        { "id": "ex_retirement_2_3" },
+        { "id": "ex_retirement_2_4" },
+        { "id": "ex_retirement_2_5" }
+      ]
+    }
+  ]
+}
