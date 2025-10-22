@@ -123,16 +123,16 @@ export function DashboardSidebar({ className, ...props }: React.ComponentProps<t
                 {group.items.map((item) => (
                   <SidebarMenuItem
                     key={item.title}
-                    className={cn(item.locked && "pointer-events-none opacity-50", isV0 && "pointer-events-none")}
-                    data-disabled={item.locked}
+                    className={cn((item as any).locked && "pointer-events-none opacity-50", isV0 && "pointer-events-none")}
+                    data-disabled={(item as any).locked}
                   >
                     <SidebarMenuButton
-                      asChild={!item.locked}
+                      asChild={!(item as any).locked}
                       isActive={pathname === item.url || (item.url !== "/dashboard" && pathname.startsWith(item.url))}
-                      disabled={item.locked}
-                      className={cn("disabled:cursor-not-allowed", item.locked && "pointer-events-none")}
+                      disabled={(item as any).locked}
+                      className={cn("disabled:cursor-not-allowed", (item as any).locked && "pointer-events-none")}
                     >
-                      {item.locked ? (
+                      {(item as any).locked ? (
                         <div className="flex items-center gap-3 w-full">
                           <item.icon className="size-5" />
                           <span>{item.title}</span>
@@ -144,7 +144,7 @@ export function DashboardSidebar({ className, ...props }: React.ComponentProps<t
                         </Link>
                       )}
                     </SidebarMenuButton>
-                    {item.locked && <SidebarMenuBadge>{/* Placeholder for lock icon */}</SidebarMenuBadge>}
+                    {(item as any).locked && <SidebarMenuBadge>{/* Placeholder for lock icon */}</SidebarMenuBadge>}
                   </SidebarMenuItem>
                 ))}
               </SidebarMenu>
