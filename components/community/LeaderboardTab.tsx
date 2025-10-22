@@ -240,8 +240,8 @@ export default function LeaderboardTab({ filters }: LeaderboardTabProps) {
 
                 {entry.change !== 0 && (
                   <div className="flex items-center justify-center gap-1 mt-2 text-xs">
-                    {getChangeIcon(entry.change)}
-                    <span>{Math.abs(entry.change)}</span>
+                    {getChangeIcon(entry.change || 0)}
+                    <span>{Math.abs(entry.change || 0)}</span>
                   </div>
                 )}
               </CardContent>
@@ -289,8 +289,8 @@ export default function LeaderboardTab({ filters }: LeaderboardTabProps) {
                   </div>
                   {entry.change !== 0 && (
                     <div className="flex items-center justify-end gap-1 text-xs text-muted-foreground">
-                      {getChangeIcon(entry.change)}
-                      <span>{Math.abs(entry.change)}</span>
+                      {getChangeIcon(entry.change || 0)}
+                      <span>{Math.abs(entry.change || 0)}</span>
                     </div>
                   )}
                 </div>
