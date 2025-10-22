@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import DashboardPageLayout from "@/components/dashboard/layout"
 import { Users } from "lucide-react"
@@ -10,7 +10,7 @@ import DirectoryTab from "@/components/community/DirectoryTab"
 import LeaderboardTab from "@/components/community/LeaderboardTab"
 import type { CommunityFilters } from "@/types/community"
 
-export default function CommunityPage() {
+function CommunityContent() {
   const searchParams = useSearchParams()
   const [activeTab, setActiveTab] = useState<'feed' | 'directory' | 'leaderboard'>('feed')
   const [filters, setFilters] = useState<CommunityFilters>({
@@ -119,5 +119,42 @@ export default function CommunityPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function CommunityPage() {
+  return (
+    <Suspense fallback={
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
+        <div className="w-full">
+          <DashboardPageLayout
+            header={{
+              title: "Community",
+              description: `Connect with fellow financial rebels`,
+              icon: Users,
+            }}
+          >
+            <div className="animate-pulse">
+              <div className="h-8 bg-muted rounded mb-4"></div>
+              <div className="h-32 bg-muted rounded"></div>
+            </div>
+          </DashboardPageLayout>
+        </div>
+        <div className="hidden lg:block">
+          <div className="space-y-6 py-sides sticky top-0">
+            <div className="bg-card rounded-lg border p-6">
+              <div className="h-6 bg-muted rounded mb-4"></div>
+              <div className="space-y-3">
+                <div className="h-4 bg-muted rounded"></div>
+                <div className="h-4 bg-muted rounded"></div>
+                <div className="h-4 bg-muted rounded"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }>
+      <CommunityContent />
+    </Suspense>
   )
 }
