@@ -1,6 +1,6 @@
 # Supabase Setup Instructions
 
-This document provides step-by-step instructions to set up Supabase authentication and database for the M.O.N.K.Y Financial OS dashboard.
+This document provides step-by-step instructions to set up Supabase authentication and database for the UNIFI Financial OS dashboard.
 
 ## Prerequisites
 
@@ -13,7 +13,7 @@ This document provides step-by-step instructions to set up Supabase authenticati
 2. Click "New Project"
 3. Choose your organization
 4. Enter project details:
-   - Name: `monky-financial-os` (or your preferred name)
+   - Name: `unifi-financial-os` (or your preferred name)
    - Database Password: Generate a strong password
    - Region: Choose the closest region to your users
 5. Click "Create new project"
@@ -198,4 +198,4 @@ Once your Supabase setup is complete, you can:
 5. Add email notifications
 6. Implement advanced security features
 
-Your M.O.N.K.Y Financial OS dashboard is now ready with full authentication and database functionality!
+Your UNIFI Financial OS dashboard is now ready with full authentication and database functionality!

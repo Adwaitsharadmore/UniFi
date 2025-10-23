@@ -25,7 +25,7 @@ export default function OnboardingWelcome() {
         </div>
 
         <div className="space-y-4">
-          <h1 className="text-5xl font-display uppercase tracking-tight">Welcome to M.O.N.K.Y.</h1>
+          <h1 className="text-5xl font-display uppercase tracking-tight">Welcome to UNIFI</h1>
           <p className="text-xl text-muted-foreground uppercase tracking-wide">Financial Management OS</p>
         </div>
 

@@ -89,7 +89,7 @@ export default function SignupPage() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
-          <CardTitle className="text-2xl font-bold">Join M.O.N.K.Y</CardTitle>
+          <CardTitle className="text-2xl font-bold">Join UNIFI</CardTitle>
           <CardDescription>
             Create your account to get started
           </CardDescription>

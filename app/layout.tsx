@@ -29,8 +29,8 @@ const isV0 = process.env["VERCEL_URL"]?.includes("vusercontent.net") ?? false
 
 export const metadata: Metadata = {
   title: {
-    template: "%s – M.O.N.K.Y Financial OS",
-    default: "M.O.N.K.Y Financial OS",
+    template: "%s – UNIFI Financial OS",
+    default: "UNIFI Financial OS",
   },
   description:
     "Gamified financial management for achieving your goals with intelligent insights and collaborative tracking.",

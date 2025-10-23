@@ -88,7 +88,7 @@ export default function PreferencesSettings({ settings, onUpdate }: PreferencesS
             <Label className="text-sm font-medium">Theme</Label>
             <span className="text-xs text-muted-foreground uppercase">Dark Mode Active</span>
           </div>
-          <p className="text-xs text-muted-foreground">Currently using the M.O.N.K.Y dark theme</p>
+          <p className="text-xs text-muted-foreground">Currently using the UNIFI dark theme</p>
         </div>
       </CardContent>
     </Card>
