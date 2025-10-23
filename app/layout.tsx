@@ -3,6 +3,7 @@ import { Roboto_Mono } from "next/font/google"
 import "./globals.css"
 import type { Metadata } from "next"
 import { V0Provider } from "@/lib/v0-context"
+import { AuthProvider } from "@/lib/auth-context"
 import localFont from "next/font/local"
 import { SidebarProvider } from "@/components/ui/sidebar"
 import { MobileHeader } from "@/components/dashboard/mobile-header"
@@ -48,21 +49,23 @@ export default function RootLayout({
       </head>
       <body className={`${rebelGrotesk.variable} ${robotoMono.variable} antialiased`}>
         <V0Provider isV0={isV0}>
-          <SidebarProvider>
-            {/* Mobile Header - only visible on mobile */}
-            <MobileHeader mockData={mockData} />
+          <AuthProvider>
+            <SidebarProvider>
+              {/* Mobile Header - only visible on mobile */}
+              <MobileHeader mockData={mockData} />
 
-            <div className="w-full grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-0">
-              <div className="hidden lg:block top-0 relative">
-                <DashboardSidebar />
+              <div className="w-full grid grid-cols-1 lg:grid-cols-[240px_1fr] gap-0">
+                <div className="hidden lg:block top-0 relative">
+                  <DashboardSidebar />
+                </div>
+
+                <div className="w-full px-sides">{children}</div>
               </div>
 
-              <div className="w-full px-sides">{children}</div>
-            </div>
-
-            {/* Mobile Chat - floating CTA with drawer */}
-            <MobileChat />
-          </SidebarProvider>
+              {/* Mobile Chat - floating CTA with drawer */}
+              <MobileChat />
+            </SidebarProvider>
+          </AuthProvider>
         </V0Provider>
       </body>
     </html>

@@ -132,60 +132,36 @@ export function analyzeSpendingPatterns(transactions: Transaction[]): SpendingPa
 export function generateChartData(transactions: Transaction[], period: TimePeriod): FinancialChartData[] {
   if (transactions.length === 0) return []
 
-  const data: FinancialChartData[] = []
+  // Import the new analytics system
+  const { normalizeTransactions } = require('./analytics/normalize');
+  const { buildIncomeExpenseSavingsSeries, seriesToChartData } = require('./analytics/series');
   
-  // Get the actual date range from transactions
-  const dates = transactions.map(t => new Date(t.date)).sort((a, b) => a.getTime() - b.getTime())
-  const minDate = dates[0]
-  const maxDate = dates[dates.length - 1]
-
-  let periods: Date[] = []
-  let formatStr = "MM/dd"
-
-  switch (period) {
-    case "week":
-      // Show the last 7 days of transaction data
-      periods = Array.from({ length: 7 }, (_, i) => subDays(maxDate, 6 - i))
-      formatStr = "MM/dd"
-      break
-    case "month":
-      // Show the last 30 days of transaction data
-      periods = Array.from({ length: 30 }, (_, i) => subDays(maxDate, 29 - i))
-      formatStr = "MM/dd"
-      break
-    case "quarter":
-      // Show the last 12 weeks of transaction data
-      periods = Array.from({ length: 12 }, (_, i) => subDays(maxDate, (11 - i) * 7))
-      formatStr = "MM/dd"
-      break
-    case "year":
-      // Show monthly data for the transaction period
-      const monthsDiff = Math.ceil((maxDate.getTime() - minDate.getTime()) / (1000 * 60 * 60 * 24 * 30))
-      const monthsToShow = Math.min(12, Math.max(1, monthsDiff))
-      periods = Array.from({ length: monthsToShow }, (_, i) => {
-        const monthDate = new Date(minDate.getFullYear(), minDate.getMonth() + i, 1)
-        return monthDate
-      })
-      formatStr = "MMM"
-      break
-  }
-
-  periods.forEach((date) => {
-    const dateStr = format(date, "yyyy-MM-dd")
-    const dayTransactions = transactions.filter((t) => t.date.startsWith(dateStr))
-
-    const income = dayTransactions.filter((t) => t.type === "credit").reduce((sum, t) => sum + t.amount, 0)
-    const expenses = dayTransactions.filter((t) => t.type === "debit").reduce((sum, t) => sum + t.amount, 0)
-
-    data.push({
-      date: format(date, formatStr),
-      income,
-      expenses,
-      savings: income - expenses,
-    })
-  })
-
-  return data
+  // Normalize transactions to new format
+  const normalizedTxns = normalizeTransactions(transactions);
+  
+  // Convert period to grain
+  const grainMap: Record<TimePeriod, 'week' | 'month' | 'quarter' | 'year'> = {
+    week: 'week',
+    month: 'month', 
+    quarter: 'quarter',
+    year: 'year'
+  };
+  
+  const grain = grainMap[period];
+  
+  // Build the series using the new analytics system
+  const series = buildIncomeExpenseSavingsSeries(normalizedTxns, { grain });
+  
+  // Convert to chart data format
+  const chartData = seriesToChartData(series, grain);
+  
+  // Convert to the expected FinancialChartData format
+  return chartData.map(point => ({
+    date: point.name,
+    income: point.income,
+    expenses: point.expenses,
+    savings: point.savings
+  }));
 }
 
 export function calculateAnalytics(transactions: Transaction[], goal: Goal | null) {

@@ -20,7 +20,7 @@ import {
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { cn } from "@/lib/utils"
 import BracketsIcon from "@/components/icons/brackets"
-import { Target, TrendingUp, BarChart3, Lightbulb, Settings, Users, BookOpen } from "lucide-react"
+import { Target, TrendingUp, BarChart3, Lightbulb, Settings, Users, BookOpen, User, LogOut } from "lucide-react"
 import MonkeyIcon from "@/components/icons/monkey"
 import DotsVerticalIcon from "@/components/icons/dots-vertical"
 import { Bullet } from "@/components/ui/bullet"
@@ -29,7 +29,12 @@ import { useIsV0 } from "@/lib/v0-context"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { getUser, DEFAULT_USER } from "@/lib/finance-data"
-import type { User } from "@/types/finance"
+import type { User as FinanceUser } from "@/types/finance"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { Button } from "@/components/ui/button"
+import { useAuth } from "@/lib/auth-context"
+import { useRouter } from "next/navigation"
 
 // This is sample data for the sidebar
 const data = {
@@ -89,10 +94,89 @@ const data = {
   },
 }
 
+function SidebarUserProfile() {
+  const { user, signOut } = useAuth()
+  const router = useRouter()
+
+  if (!user) {
+    return (
+      <Button 
+        onClick={() => router.push('/auth/login')}
+        variant="outline"
+        className="w-full"
+      >
+        Sign In
+      </Button>
+    )
+  }
+
+  const handleSignOut = async () => {
+    await signOut()
+    router.push('/auth/login')
+  }
+
+  const getInitials = (name: string | null | undefined) => {
+    if (!name) return 'U'
+    return name.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2)
+  }
+
+  return (
+    <div className="flex items-center gap-3 p-3 bg-sidebar-accent rounded-lg">
+      <Avatar className="h-10 w-10">
+        <AvatarImage src={user.user_metadata?.avatar_url} alt={user.user_metadata?.full_name} />
+        <AvatarFallback className="bg-sidebar-primary text-sidebar-primary-foreground">
+          {getInitials(user.user_metadata?.full_name || user.email)}
+        </AvatarFallback>
+      </Avatar>
+      <div className="flex-1 min-w-0">
+        <p className="text-sm font-semibold text-sidebar-foreground truncate">
+          {user.user_metadata?.full_name || 'User'}
+        </p>
+        <p className="text-xs text-sidebar-foreground/70 truncate">
+          {user.email}
+        </p>
+      </div>
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant="ghost" size="sm" className="h-8 w-8 p-0">
+            <DotsVerticalIcon className="h-4 w-4" />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent className="w-56" align="end" forceMount>
+          <DropdownMenuLabel className="font-normal">
+            <div className="flex flex-col space-y-1">
+              <p className="text-sm font-medium leading-none">
+                {user.user_metadata?.full_name || 'User'}
+              </p>
+              <p className="text-xs leading-none text-muted-foreground">
+                {user.email}
+              </p>
+            </div>
+          </DropdownMenuLabel>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem onClick={() => router.push('/dashboard/settings')}>
+            <User className="mr-2 h-4 w-4" />
+            <span>Profile</span>
+          </DropdownMenuItem>
+          <DropdownMenuItem onClick={() => router.push('/dashboard/settings')}>
+            <Settings className="mr-2 h-4 w-4" />
+            <span>Settings</span>
+          </DropdownMenuItem>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem onClick={handleSignOut}>
+            <LogOut className="mr-2 h-4 w-4" />
+            <span>Log out</span>
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
+    </div>
+  )
+}
+
 export function DashboardSidebar({ className, ...props }: React.ComponentProps<typeof Sidebar>) {
   const isV0 = useIsV0()
   const pathname = usePathname()
-  const [user, setUser] = useState<User>(DEFAULT_USER)
+  const [user, setUser] = useState<FinanceUser>(DEFAULT_USER)
 
   useEffect(() => {
     const loaded = getUser()
@@ -162,39 +246,7 @@ export function DashboardSidebar({ className, ...props }: React.ComponentProps<t
           <SidebarGroupContent>
             <SidebarMenu>
               <SidebarMenuItem>
-                <Popover>
-                  <PopoverTrigger className="flex gap-0.5 w-full group cursor-pointer">
-                    <div className="shrink-0 flex size-14 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground overflow-clip">
-                      <Image
-                        src={user.avatar || "/placeholder.svg"}
-                        alt={user.name || "User avatar"}
-                        width={120}
-                        height={120}
-                      />
-                    </div>
-                    <div className="group/item pl-3 pr-1.5 pt-2 pb-1.5 flex-1 flex bg-sidebar-accent hover:bg-sidebar-accent-active/75 items-center rounded group-data-[state=open]:bg-sidebar-accent-active group-data-[state=open]:hover:bg-sidebar-accent-active group-data-[state=open]:text-sidebar-accent-foreground">
-                      <div className="grid flex-1 text-left text-sm leading-tight">
-                        <span className="truncate text-xl font-display">{user.name || "User"}</span>
-                        <span className="truncate text-xs uppercase opacity-50 group-hover/item:opacity-100">
-                          {user.email || ""}
-                        </span>
-                      </div>
-                      <DotsVerticalIcon className="ml-auto size-4" />
-                    </div>
-                  </PopoverTrigger>
-                  <PopoverContent className="w-56 p-0" side="bottom" align="end" sideOffset={4}>
-                    <div className="flex flex-col">
-                      <button className="flex items-center px-4 py-2 text-sm hover:bg-accent">
-                        <MonkeyIcon className="mr-2 h-4 w-4" />
-                        Account
-                      </button>
-                      <button className="flex items-center px-4 py-2 text-sm hover:bg-accent">
-                        <Settings className="mr-2 h-4 w-4" />
-                        Settings
-                      </button>
-                    </div>
-                  </PopoverContent>
-                </Popover>
+                <SidebarUserProfile />
               </SidebarMenuItem>
             </SidebarMenu>
           </SidebarGroupContent>

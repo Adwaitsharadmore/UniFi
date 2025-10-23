@@ -55,6 +55,17 @@ export default function DashboardOverview() {
     return `${value.toFixed(1)}%`
   }
 
+  const getMostRecentBalance = (transactions: Transaction[]) => {
+    if (transactions.length === 0) return 0
+    
+    // Sort transactions by date (most recent first) and get the first one's balance
+    const sortedTransactions = [...transactions].sort((a, b) => 
+      new Date(b.date).getTime() - new Date(a.date).getTime()
+    )
+    
+    return sortedTransactions[0]?.balance || 0
+  }
+
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
@@ -88,11 +99,11 @@ export default function DashboardOverview() {
 
               <DashboardStat
                 label="AVAILABLE BALANCE"
-                value={metrics ? formatCurrency(metrics.monthlyIncome - metrics.monthlyExpenses) : "$0"}
-                description="INCOME - EXPENSES"
+                value={formatCurrency(getMostRecentBalance(transactions))}
+                description="CURRENT BALANCE"
                 icon={DollarSign}
-                intent={metrics && metrics.monthlyIncome > metrics.monthlyExpenses ? "positive" : "negative"}
-                direction={metrics && metrics.monthlyIncome > metrics.monthlyExpenses ? "up" : "down"}
+                intent={getMostRecentBalance(transactions) > 0 ? "positive" : "negative"}
+                direction={getMostRecentBalance(transactions) > 0 ? "up" : "down"}
               />
 
               <DashboardStat
