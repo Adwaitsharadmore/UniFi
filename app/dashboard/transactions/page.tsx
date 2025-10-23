@@ -11,6 +11,7 @@ import TransactionSummary from "@/components/finance/transaction-summary"
 import CategoryBreakdown from "@/components/finance/category-breakdown"
 import TopMerchants from "@/components/finance/top-merchants"
 import { calculateCategorySpending } from "@/lib/analytics"
+import AIChatWidget from "@/components/ai-chat/ai-chat-widget"
 
 export default function TransactionsPage() {
   const [transactions, setTransactions] = useState<Transaction[]>([])
@@ -88,30 +89,35 @@ export default function TransactionsPage() {
   }, [filteredTransactions])
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-6 h-screen">
-      <div className="min-w-0">
-        <DashboardPageLayout
-          header={{
-            title: "Transactions",
-            description: `${filteredTransactions.length} transactions`,
-            icon: TrendingUp,
-          }}
-        >
-          <TransactionSummary transactions={filteredTransactions} />
+    <>
+      <div className="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-6 h-screen">
+        <div className="min-w-0">
+          <DashboardPageLayout
+            header={{
+              title: "Transactions",
+              description: `${filteredTransactions.length} transactions`,
+              icon: TrendingUp,
+            }}
+          >
+            <TransactionSummary transactions={filteredTransactions} />
 
-          <div className="space-y-6">
-            <TransactionFilters filters={filters} onFiltersChange={setFilters} />
-            <TransactionTable transactions={filteredTransactions} />
+            <div className="space-y-6">
+              <TransactionFilters filters={filters} onFiltersChange={setFilters} />
+              <TransactionTable transactions={filteredTransactions} />
+            </div>
+          </DashboardPageLayout>
+        </div>
+
+        <div className="hidden lg:block py-5">
+          <div className="space-y-6 h-full overflow-y-auto">
+            <CategoryBreakdown categorySpending={categorySpending} />
+            <TopMerchants transactions={filteredTransactions} />
           </div>
-        </DashboardPageLayout>
-      </div>
-
-      <div className="hidden lg:block py-5">
-        <div className="space-y-6 h-full overflow-y-auto">
-          <CategoryBreakdown categorySpending={categorySpending} />
-          <TopMerchants transactions={filteredTransactions} />
         </div>
       </div>
-    </div>
+      
+      {/* AI Chat Widget */}
+      <AIChatWidget />
+    </>
   )
 }

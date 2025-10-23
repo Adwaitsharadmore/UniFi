@@ -11,6 +11,7 @@ import GoalTimeline from "@/components/finance/goal-timeline"
 import GoalRecommendations from "@/components/finance/goal-recommendations"
 import GamificationWidget from "@/components/finance/gamification-widget"
 import QuickStatsWidget from "@/components/finance/quick-stats-widget"
+import AIChatWidget from "@/components/ai-chat/ai-chat-widget"
 
 export default function GoalsPage() {
   const [goal, setGoal] = useState<Goal | null>(null)
@@ -60,6 +61,9 @@ export default function GoalsPage() {
           <QuickStatsWidget />
         </div>
       </div>
+      
+      {/* AI Chat Widget */}
+      <AIChatWidget />
     </>
   )
 }
